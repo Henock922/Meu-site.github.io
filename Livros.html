@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sittte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 90px;
+    width: 250px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 29px;
+    border-radius: 21px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1e3a5f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 1px 2px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon span {
+        font-size: 24px;
+    }
+}
+  
+  
+  Section#livros {
+    Padding: 10px;
+    Display: flex;
+    Flex-direction: column;
+    Align-items: center;
+}
+
+.book {
+    
+    Align-items: center;
+    Margin: -20px 10px;
+    Border: 1px solid #ccc;
+    Padding: px;
+    Width: 200px;
+    Max-width: 270px;
+    Background-color: white;
+    Border-radius: 5px;
+  max-height: 210px; /* Defina a altura máxima desejada */
+      overflow: hidden; /* Oculta o conteúdo que ultrapassa a altura */
+  transition: transform 0.s ease-in-out;
+}
+  .book:hover {
+      transform: scale(1.);
+    }
+
+.book img {
+    Max-width: 100px;
+  max-height: 200px;
+  align-itens: center;
+  
+}
+
+.detalhes {
+    Display: flex;
+    Flex-direction: column;
+}
+
+.detalhes h2 {
+    Margin: 0 0 10px 0;
+}
+
+.detalhes p {
+    Margin: 0 0 10px 0;
+}
+
+Button {
+    Padding: 5px 100px;
+    Background-color: #4CAF50;
+    Color: white;
+    Border: none;
+     text-align: center;
+     border-radius: px;
+    Cursor: pointer;
+}
+
+Button:hover {
+    Background-color: #45ª049;
+}
+  
+  
+  
+
+.book-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 20px;
+}
+
+.book {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 0 0 300px;
+}
+   {
+            display: none; /* Escondido inicialmente */
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .password-prompt input {
+            margin-bottom: 10px;
+        }
+    span{
+
+            color: white;
+            font-weight: bold;
+            #background-color: black;
+</style>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Imagens/log1.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Início</a></li>
+                <li><a href="Livros.html">Artigos</a></li>
+                <li><a href="Cursos.html">Cursos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+        <a href="Inicio.html">Início</a>
+        <a href="Livros.html">Artigos</a>
+        <a href="Cursos.html">Cursos</a>
+        <a href="Noticias.html">Noticias</a>
+        <button class="btn"><a href="922729630" style="font-size: 120%">Entrar em contacto</a></button><br><br>
+      <p style="color: white; text-align: center">
+        CRIADO POR<br> ”ENOQUE CARLOS YT”
+      </p>
+    </aside>
+
+    <!-- Main Content -->
+
+    <h2 style=" text-align:center; color:#1e3a5f; padding: 2%">Escolha os seus artigos</h2>
+  <main>
+    <h4><marquee>Tecnologia de informação</marquee></h4>
+      <section class="book-carousel">
+            <div class="book">
+              <div class="book">
+                <img src="imagens/invadem.jpg" alt="Ciber-seguranca">
+              </div>
+                <h4>Como os hackerʼs invadem contas e mídias socciais?</h4>
+                <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+              <button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="imagens/Cbsegur.jpg" alt="Carreira tech">
+              </div>
+                <h4>CIBER-SECURITY</h4><br>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+              <button onclick="verificarSenha('02')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="imagens/pprogramar.jpg" alt="Carreira tech">
+              </div>
+                <h4>Como dominar programação de uma vez por todas?</h4>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+          <button onclick="verificarSenha('03')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="imagens/espiador.jpg" alt="Carreira tech">
+              </div>
+                <h4>Você está sendo espiado/hackeado?</h4>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%; font-size: 80%">Disponivel</p>
+            </div>
+                <button onclick="verificarSenha('04')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="imagens/termuxhack.jpg" alt="Carreira tech">
+              </div>
+                <h4>Termux hacking</h4>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%; font-size: 60%">Disponivel</p>
+            </div>
+           <button onclick="verificarSenha('05')">Baixar</button>
+            </div>
+        
+           
+            <!-- Adicione mais -->
+        </section><br>
+      <h3>Programação</h3>
+      <section class="book-carousel">
+            <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Python 1.0">
+              </div>
+                <h4>Python 1.0</h4>
+       <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+              <button onclick="verificarSenha('06')">Baixar</button>
+            </div>
+            
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>HTML, CSS e JAVA-SCRIPT </h4>
+             <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>   
+          <button onclick="verificarSenha('07')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>BASH 1.0</h4>
+               <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div> 
+          <button onclick="verificarSenha('08')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>PHP básico/intermediário</h4>
+              <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+          <button onclick="verificarSenha('09')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>JAVA SCRIPT</h4>
+               <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div> 
+          <button onclick="verificarSenha('10')">Baixar</button>
+            </div>
+        
+        <!--- Adicione mais --->
+        </section><br>
+      <h3><marquee>Família, Amizades, Amor, beleza, passeio, Aventuras...</marquee></h3>
+      <section class="book-carousel">
+            <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>Família —Seja um bom ouvinte</h4>
+               <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div> 
+              <button onclick="verificarSenha('10')">Baixar</button>
+            </div>
+        
+           <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>Amizades—Seja um bom amigo</h4>
+                <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+             <button onclick="verificarSenha('11')">Baixar</button>
+            </div>
+        
+<div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>Amor—Ela te ama de verdade? PARTE 1</h4>
+               <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+  <button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        
+<div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>AMOR—Ele te ama de verdade? PARTE 1</h4>
+                <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+  <button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        
+<div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>BELEZA—Minha aparência</h4>
+  <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+  <button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        
+        </section>
+    <h3>Economia —Angola</h3>
+     <section class="book-carousel">
+            <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Precos altos">
+              </div>
+                <h4>Tantas coisas caras. — O que posso fazer?</h4>
+              <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+                <button onclick="verificarSenha('10')">Baixar</button>
+            </div>
+            
+       <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>Como superar o preço da gasolina?</h4>
+         <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+               </p><button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+       <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>Construa sua propria casa em 2025</h4>
+         <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+            </p><button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+       
+       <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>Marketing digital—VERSÃO ALARGADA</h4>
+         <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+               <button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+       
+       <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>Criando um rendimento em casa</h4>
+         <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+         <button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        </section>
+    
+          <!-- Adicione mais -->
+        </section><br>
+      <h3><marquee>Histórias e lições de vida</marquee></h3>
+      <section class="book-carousel">
+            <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Python 1.0">
+              </div>
+                <h4>A garçonete e o taxista</h4>
+              <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+                </p><button onclick="verificarSenha('06')">Baixar</button>
+            </div>
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>CIBER-SECURITY</h4>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+                <p>Aprenda a proteger-se de ataques cinernéticos–hacker`s</p><button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>CIBER-SECURITY</h4>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+                <p>Aprenda a proteger-se de ataques cinernéticos–hacker`s</p><button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>CIBER-SECURITY</h4>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+                <p>Aprenda a proteger-se de ataques cinernéticos–hacker`s</p><button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+        
+        <div class="book">
+              <div class="book">
+                <img src="/storage/emulated/0/inshot/InShot_20240705_002012550.jpg" alt="Carreira tech">
+              </div>
+                <h4>CIBER-SECURITY</h4>
+          <div class="info">
+              <p class="price" style="color: #00FF00; background: black; margin-left: 60%">Disponivel</p>
+            </div>
+                <p>Aprenda a proteger-se de ataques cinernéticos–hacker`s</p><button onclick="verificarSenha('01')">Baixar</button>
+            </div>
+         
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Imagens/logo2.jpg" alt="Logo">
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="imagens/tiktoklog.jpg" alt="tiktok"></a>
+                <a href="#"><img src="imagens/discadlog.jpg" alt="W"></a>
+                <a href="#"><img src="imagens/faceblog.jpg" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+function verificarSenha(livro) {
+            let senha = prompt('Para baixar o artigo solicitado, é necessário uma senha. Digite a senha, ou caso você não tenha, peça ao proprietário do artigo(ENOQUE CARLOS) para que você faça o dowloand:');
+            if (livro === '01' && senha === 's1') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Física
+            } else if (livro === '02' && senha === 's2') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '03' && senha === 's3') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '04' && senha === 's4') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '05' && senha === 's5') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '06' && senha === 's6') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '07' && senha === 's7') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '08' && senha === 's8') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '09' && senha === 's9') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '10' && senha === 's10') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '11' && senha === 's11') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            } else if (livro === '12' && senha === 's12') {
+                alert('Baixando...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '13' && senha === 's13') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '14' && senha === 's14') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '15' && senha === 's15') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '16' && senha === 's16') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '17' && senha === 's17') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '18' && senha === 's18') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '19' && senha === 's19') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '20' && senha === 's20') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '21' && senha === 's21') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '22' && senha === 's22') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '23' && senha === 's23') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '24' && senha === 's24') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '25' && senha === 's25') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '26' && senha === 's26') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '27' && senha === 's27') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '28' && senha === 's28') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '29' && senha === 's29') {
+                alert('Baixando ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '30' && senha === 's30') {
+                alert('Baixando Android ...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '31' && senha === 's31') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '32' && senha === 's32') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '33' && senha === 's33') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '34' && senha === 's34') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '35' && senha === 's35') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '36' && senha === 's36') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '37' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '38' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '39' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '40' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '41' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '42' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '43' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '44' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '45' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '46' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '47' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '49' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '50' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '51' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '52' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '53' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '54' && senha === 's2') {
+                alert('Baixando Android coding...');
+                // Coloque aqui o link para download do Livro de Matemática
+            }else if (livro === '55' && senha === 's3') {
+                alert('Baixando Livro E.M.C...');
+                // Coloque aqui o link para download do Livro E.M.C
+            } else {
+                alert('Senha incorreta!');
+            }
+        }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.getElementById('menu-icon');
+    const sidebar = document.getElementById('sidebar');
+    const closeBtn = document.getElementById('closebtn');
+
+    menuIcon.addEventListener('click', () => {
+        sidebar.style.width = '250px';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.style.width = '0';
+    });
+
+    // Close the sidebar when clicking outside of it
+    document.addEventListener('click', (event) => {
+        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+            sidebar.style.width = '0';
+        }
+    });
+});
+</script>
+</body>
+</html>
